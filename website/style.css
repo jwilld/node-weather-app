@@ -1,111 +1,112 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+html {
+    color: #2D312F;
+    font-family: 'Roboto', sans-serif;
 }
-
-#app{
+.app-container{
+    height: 100vh;
+    padding: 0 250px 0 250px;
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    grid-template-rows: .5fr 3fr;
+    margin: 0;
+}
+
+
+input {
+    border: none;
+    border-bottom: .5px solid #C4C4C4;
+    width: 100px;
+    font-size: 18px;
+}
+
+textarea {
+    border: none;
+    border-left: .5px solid #C4C4C4;
+    border-right: .5px solid #C4C4C4;
+    font-size: 18px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #062743;
+    border-radius: 5px;
+    border: none;
+    color: #F9F9F9;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+p, textarea, input {
+    line-height: 25px;
+    letter-spacing: .3px;
+}
+
+/* class to hide elements */
+
+.app-header {
+    grid-row: 1;
+    display: flex;
     justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
 }
 
-.holder{
 
+.journal-container{
+    grid-row: 2;
+    height: 90%; 
+    overflow: scroll;
+}
+.journal-entries-container{
+    height: 100%; 
+    
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
+.journal-entries {
+    height: 100%;
+    overflow: scroll;
+}
+.journal-input-container {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    /* display: none; */
+}
+.sub-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#entryHolder{
-
+.journal-button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
-
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
-}
-
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.close-button {
+    background-color: transparent;
     border: none;
+    color: #062743;
+    width: 0px;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+.add-entry-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.add-entry-button {
+    justify-self: flex-end;
 }
-/* Reset style for HTML element on active to have no border*/
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+
+.hidden{
+    display: none;
 }
-/* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
+@media only screen and (max-width: 1000px) {
+    .app-container {
+        padding: 0 30px 0 30px;
+    }
+}
