@@ -1,5 +1,5 @@
 /* Global Variables */
-const apiKey = "6d1199f91f57844b4df9d3c4d69f4fa4";
+const apiKey = "YOUR API KEY";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
