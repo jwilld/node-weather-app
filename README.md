@@ -6,8 +6,6 @@ Dynamic web app that uses a Node, Express and a weather API to create journal en
 ## Instructions
 Load the server.js file with node, then open localhost:3000(the port in server.js).
 
-## Preview
-![alt text](https://i.imgur.com/CHleARU.png)
 
 ## Mockups
 
