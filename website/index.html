@@ -17,13 +17,13 @@
   </header>
   <main class='journal-container'>
     <div class='add-entry-container'>
-      <button class='add-entry-button' type='submit'>add new</button>
+      <button id='generate' class='add-entry-button' type='submit'>add new</button>
     </div>
     <section class='journal-entries-container'>
       <form class='journal-input-container hidden'>
         <input class='journal-title-input' placeholder='Title'/>
-        <input class='journal-zip-input' placeholder='zip'/>
-        <textarea class='journal-content-input' placeholder='How was today?' rows='5'></textarea>
+        <input id='zip' class='journal-zip-input' placeholder='enter zip code here'/>
+        <textarea id='feelings' class='journal-content-input' placeholder='How was today?' rows='5'></textarea>
         <div class='journal-button-container'>
           <button class='close-button' type='close'>close</button>
           <button class='submit-button' type='reset'>submit</button>
