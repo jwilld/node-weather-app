@@ -11,5 +11,7 @@ Load the server.js file with node, then open localhost:3000(the port in server.j
 ![alt text](https://i.imgur.com/IhMHWWS.png)
 
 ## Mockups
+![alt text](https://i.imgur.com/CHleARU.png)
 ![alt text](https://i.imgur.com/MZzfbPA.png)
+
 
